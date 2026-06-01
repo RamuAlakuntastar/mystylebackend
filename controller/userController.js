@@ -4,7 +4,7 @@ const {signupFactory,
     getAllFactory,
     deleteFactory} = require("../utility/userFactory")
 
-const usermodel = require("../model/usermodel")
+const usermodel = require("../model/userModel")
 
 
 const signup = signupFactory(usermodel);
