@@ -12,11 +12,7 @@ app.use(express.json())
 app.use("/api/user", userrouter)
 app.use("/api/item", itemrouter)
 app.use("/api/cart", cartrouter)
-app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true
-
-}))
+app.use(cors())
 
 const {USER, PASSWORD, PORT} = process.env
 const durl = `mongodb+srv://${USER}:${PASSWORD}@cluster0.5liukrt.mongodb.net/?appName=Cluster0`
